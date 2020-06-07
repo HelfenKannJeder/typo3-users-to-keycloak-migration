@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/helfenkannjeder
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    database: mysql
+
+import:
+  emailFilter:
+
+keycloak:
+  baseUri: http://localhost:8086
+  tokenUri: ${keycloak.baseUri}/auth/realms/master/protocol/openid-connect/token
+  realm: helfomat
